@@ -1,0 +1,32 @@
+{% include "public/header.html" %}
+
+  {% for v in data %}
+    {{v.money}}
+  {% endfor %}
+
+
+    {{title}}<br>
+    {{one}}<br>
+    {{two}}<br>
+    {{three}}<br>
+    {{four}}<br>
+
+    {{data.one}}<br>
+    {{data.two}}<br>
+    {{data.three}}<br>
+    {{data.four}}<br>
+
+    {% for k,v in data %}
+      {{k}} ==== {{v}}<br>
+      ----<br>
+    {% endfor %}
+
+    {% if flag == 1 and flag2 == 2 %}
+      11111111111
+    {% else %}
+      22222222222
+    {% endif %}
+
+    {{atime|date('Y-m-d')}}
+
+{% include "public/footer.html" %}
