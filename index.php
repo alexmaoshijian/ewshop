@@ -27,7 +27,7 @@
 	Macaw::get("/demo", "admin\Demo@index");
 	Macaw::get("/demo/add", "admin\Demo@add");
 
-	Macaw::get("test", "home\Test@index");
+	Macaw::get("/test", "home\Test@index");
 
 
 	Macaw::dispatch();
